@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Arimit - Visual Artist & Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="images/misc/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Open+Sans:400,700|Work+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div id="lightbox">
+      <div id="lightbox-container"></div>
+      <div id="esc-icon">
+        <div class="esc-icon-handle" id="esc-icon-handle-1"></div>
+        <div class="esc-icon-handle" id="esc-icon-handle-2"></div>
+      </div>
+      <div id="prev-icon">
+        <div class="prev-icon-handle" id="prev-icon-handle-1"></div>
+        <div class="prev-icon-handle" id="prev-icon-handle-2"></div>
+      </div>
+      <div id="next-icon">
+        <div class="next-icon-handle" id="next-icon-handle-1"></div>
+        <div class="next-icon-handle" id="next-icon-handle-2"></div>
+      </div>
+    </div>
+
+    <div id="header" class="landing-header">
+      <div id="landing-text">
+        <div class="header-scale" id="landing-text-title">
+          <a href="#">Arimit Bhattacharya</a>
+          <div class="header-scale" id="landing-text-main-bottom">Visual Artist + Designer</div>
+        </div>
+      </div>
+      <div id="header-menu">
+        <a href="#projects" class="header-menu-item">
+          <div class="header-menu-item-text">Projects</div>
+        </a>
+        <a href="#gallery" class="header-menu-item">
+          <div class="header-menu-item-text">Gallery</div>
+        </a>
+        <a href="#contact" class="header-menu-item">
+          <div class="header-menu-item-text">Contact</div>
+        </a>
+      </div>
+      <div id="header-menu-mobile" onclick="hamAnim()">
+        <div class="header-menu-mobile-handle" id="header-menu-mobile-handle-1"></div>
+        <div class="header-menu-mobile-handle" id="header-menu-mobile-handle-2"></div>
+      </div>
+
+      <div id="ham-menu">
+        <div id="ham-menu-container">
+          <a href="#projects" onclick="hamAnim()">
+            Projects
+          </a>
+          <a href="#gallery" onclick="hamAnim()">
+            Gallery
+          </a>
+          <a href="#contact" onclick="hamAnim()">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="landing">
+      <div id="landing-about">
+        I am a multidisciplinary designer from India, currently in my first year pursuing graphic design at the Willem de Kooning Academy in Rotterdam, Netherlands.
+      </div>
+      <div id="landing-social">
+        <a href="mailto:arimitb@gmail.com" target="_blank">
+          <div class="landing-social-icon social-icon">
+            <i class="fas fa-envelope"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+        </a>
+        <a href="https://www.behance.net/arimitb" target="_blank">
+          <div class="landing-social-icon social-icon">
+            <i class="fab fa-behance"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+        </a>
+        <a href="https://dribbble.com/arimitb" target="_blank">
+          <div class="landing-social-icon social-icon">
+            <i class="fab fa-dribbble"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/arimitb/" target="_blank">
+          <div class="landing-social-icon social-icon">
+            <i class="fab fa-instagram"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/arimit-b-1a8240106/" target="_blank">
+          <div class="social-icon landing-social-icon">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+        </a>
+      </div>
+      <canvas id="landing-bg"></canvas>
+    </section>
+    <section id="landing-about-mob-sec">
+      <div id="landing-about-mob">
+        I am a multidisciplinary designer from India, currently in my first year pursuing graphic design at the Willem de Kooning Academy in Rotterdam, Netherlands.
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-title">
+        Projects
+        <div class="section-title-corner" id="title-corner-ul"></div>
+        <div class="section-title-corner" id="title-corner-ur"></div>
+        <div class="section-title-corner" id="title-corner-bl"></div>
+        <div class="section-title-corner" id="title-corner-br"></div>
+      </div>
+      <div id="projects-container">
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="section-title">
+        Gallery
+        <div class="section-title-corner" id="title-corner-ul"></div>
+        <div class="section-title-corner" id="title-corner-ur"></div>
+        <div class="section-title-corner" id="title-corner-bl"></div>
+        <div class="section-title-corner" id="title-corner-br"></div>
+      </div>
+      <div id="gallery-container">
+      </div>
+      <div id="video-gallery-container">
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contact-title">
+        Want to work together?<br><span id="contact-title-bold">Let's talk!</span>
+      </div>
+      <div id="contact-links-container">
+        <a href="mailto:arimitb@gmail.com" target="_blank">
+          <div class="social-icon">
+            <i class="fas fa-envelope"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+          <div class="social-icon-text">Email</div>
+        </a>
+        <a href="https://www.behance.net/arimitb" target="_blank">
+          <div class="social-icon">
+            <i class="fab fa-behance"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+          <div class="social-icon-text">Behance</div>
+        </a>
+        <a href="https://dribbble.com/arimitb" target="_blank">
+          <div class="social-icon">
+            <i class="fab fa-dribbble"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+          <div class="social-icon-text">Dribbble</div>
+        </a>
+        <a href="https://www.instagram.com/arimitb/" target="_blank">
+          <div class="social-icon">
+            <i class="fab fa-instagram"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+          <div class="social-icon-text">instagram</div>
+        </a>
+        <a href="https://www.linkedin.com/in/arimit-b-1a8240106/" target="_blank">
+          <div class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="social-icon-bg"></div>
+          </div>
+          <div class="social-icon-text">LinkedIn</div>
+        </a>
+      </div>
+    </section>
+    <script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="jquery-3.3.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
