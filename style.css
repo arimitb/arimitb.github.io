@@ -1215,35 +1215,7 @@ div.social-icon:hover + .social-icon-text
 
   div#landing-social
   {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    overflow-x: visible;
-  }
-
-  div#landing-social .social-icon
-  {
-    display: inline-block;
-    width: 20vw;
-    height: 20vw;
-    margin: 0 0 0 -2px;
-  }
-
-  div#landing-social .social-icon i
-  {
-    font-size: 7vw;
+    display: none;
   }
 
   section#projects
