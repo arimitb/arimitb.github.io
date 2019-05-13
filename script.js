@@ -383,7 +383,7 @@ window.addEventListener('resize', resizeCanvas);
 
 function resizeCanvas()
 {
-	canvas.height = $(window).height();
+	canvas.height = $(window).height()+($(window).height()/10);
 	canvas.width = $(window).width();
   if(canvas.width > canvas.height)
   {
@@ -464,8 +464,8 @@ function draw()
         animDir = 0;
       }
     }
-    mx = canvas.width/2;
-    my += animSpeed*0.1;
+    my = canvas.height/2;
+    mx += animSpeed*0.1;
   }
 
   for(var r = 0; r < (canvas.height/maxCircleRadius)+1; r++)
