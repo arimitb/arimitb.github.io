@@ -391,7 +391,7 @@ function resizeCanvas()
   }
   else
   {
-    maxCircleRadius = Math.round(canvas.height/10);
+    maxCircleRadius = Math.round(canvas.height/20);
   }
   if(matchMedia('(pointer:fine)').matches)
   {
