@@ -403,7 +403,7 @@ function resizeCanvas()
     mx = canvas.width/2;
     my = canvas.height/2;
     animDir = 0;
-    animSpeed = 0;
+    animSpeed = 100;
   }
   if(animPlay == 0)
   {
@@ -427,7 +427,7 @@ if(canvas.width > canvas.height)
 }
 else
 {
-  maxCircleRadius = Math.round(canvas.height/10);
+  maxCircleRadius = Math.round(canvas.height/20);
 }
 
 $(function()
