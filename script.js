@@ -1,27 +1,31 @@
 // PROJECTS
 
 var projtitle = [
-  'Canvas Art Run',
+  'Journey',
+  'Binge',
   'Interactive Bin',
-  'Binge'
+  'Canvas Art Run'
 ];
 
 var projimg = [
-  'images/projects/canvas.jpg',
+  'images/projects/journey.png',
+  'images/projects/binge.jpg',
   'images/projects/trashbin.png',
-  'images/projects/binge.jpg'
+  'images/projects/canvas.jpg'
 ];
 
 var projdesc = [
-  'This is a compilation of everything I made while exploring the creation of visual design using programming, specifically the HTML5 canvas element.',
+  'Journey is a publication design system for the blind, with a focus on making the visual arts accessible to the visually impaired.',
+  'App designed to help the user schedule TV and movie series marathons and keep track of their progress. With curated reviews and custom viewing orders, I tried to cater to every type of binger - casual or pedantic.',
   'The interactive bin is an installation aimed towards raising awareness towards environmental issues, the current state of sustainability, and difficulties faced by the cleaner force.',
-  'App designed to help the user schedule TV and movie series marathons and keep track of their progress. With curated reviews and custom viewing orders, I tried to cater to every type of binger - casual or pedantic.'
+  'This is a compilation of everything I made while exploring the creation of visual design using programming, specifically the HTML5 canvas element.'
 ];
 
 var projurl = [
-  'https://vimeo.com/313986685',
+  'https://www.behance.net/gallery/83349631/Journey-Visual-arts-for-the-blind',
+  'https://www.behance.net/gallery/78057525/Binge-Discover-binge-shows-and-films-App-Design',
   'https://www.behance.net/gallery/78326075/Interactive-Bin-P1-Autonomous',
-  'https://www.behance.net/gallery/78057525/Binge-Discover-binge-shows-and-films-App-Design'
+  'https://vimeo.com/313986685'
 ];
 
 for(k = 0; k<projimg.length; k++)
