@@ -1,0 +1,91 @@
+:root {
+  --main-font: 1rem/1.5rem "Chivo", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+}
+
+input {
+  position: fixed;
+  bottom: 0;
+}
+
+input[type="radio"] {
+  border-radius: 0;
+}
+
+audio {
+  position: relative;
+  z-index: 100;
+}
+
+.settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 4rem;
+  color: #fff;
+  font: var(--main-font);
+  background: rgba(0,0,0,0.8);
+  border-right: 1px solid #fff;
+}
+
+.settings-overlay label {
+  display: block;
+  position: relative;
+  margin-top: 2rem;
+  color: #fff;
+  font: var(--main-font);
+}
+
+.settings-overlay input {
+  display: block;
+  position: relative;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font: var(--main-font);
+  border: none;
+  outline: none;
+}
+
+.settings-overlay input[type="radio"] {
+  display: inline-block;
+}
+
+.settings-overlay #audiofile {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+
+.settings-overlay label[for="audiofile"] {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 1rem;
+  color: #111;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.settings-overlay label[for="audiofile"]:hover {
+  opacity: 0.8;
+}
+
+.settings-footnote {
+  position: relative;
+  margin-top: 2rem;
+  color: rgba(255,255,255,0.5);
+  font: var(--main-font);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
