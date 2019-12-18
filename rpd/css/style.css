@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('../misc/fonts/ms-sans-serif.ttf');
+}
+
+@font-face {
+    font-family: 'IBM BIOS';
+    src: url('../misc/fonts/determinationsansweb-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Times New Roman Bitmap';
+    src: url('../misc/fonts/TimesNewRomanBitmap.ttf');
+}
+
+:root {
+    --base-font: 1rem/1.5rem 'MS Sans Serif', monospace;
+    --title-font: 1.25rem/1.5rem 'IBM BIOS', monospace;
+    --serif-font: 1.25rem/1.5rem 'Times New Roman Bitmap', monospace;
+    --bg-col: #007d7b;
+    --base-grey: #c0c0c0;
+    --bevel-col: #dfdfdf #808080 #808080 #dfdfdf;
+    --bevel-inset-col: #808080 #dfdfdf  #dfdfdf #808080 ;
+    --selection-col: #000080;
+}
+
+::-webkit-scrollbar {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #dfdfdf;
+}
+
+::-webkit-scrollbar-button {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: red;
+    background-image: url('../images/scroll-down-icon.svg');
+    background-color: var(--base-grey);
+    border: 2px solid #000;
+    border-color: var(--bevel-col);
+    transform: rotate(90deg);
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('../images/scroll-up-icon.svg');
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('../images/scroll-right-icon.svg');
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url('../images/scroll-left-icon.svg');
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--base-grey);
+    border: 2px solid #000;
+    border-color: var(--bevel-col);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--base-grey);
+}
